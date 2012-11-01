@@ -2,14 +2,19 @@
          backupStaticAttributes="false"
          bootstrap="../public/bootstrap.php"
          cacheTokens="true"
-         colors="false"
+         colors="true"
          convertErrorsToExceptions="true"
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnFailure="false"
-         syntaxCheck="false"
+         syntaxCheck="true"
          verbose="false">
+
+    <testsuite name="OPHPORTUNIDADES - Suite de Testes">
+        <directory>.</directory>
+    </testsuite>
+    
     <filter>
         <whitelist>
             <directory>../src/Ophportunidades</directory>
