@@ -44,7 +44,10 @@ testdox: .check-installation
 	$(PHPUNIT) -c $(PHPUNIT_XML) --testdox tests/
 
 coverage: .check-installation
-	$(PHPUNIT) -c $(PHPUNIT_XML) --coverage-text tests/	
+	$(PHPUNIT) -c $(PHPUNIT_XML) --coverage-text tests/
+
+coverage-html: .check-installation
+	$(PHPUNIT) -c $(PHPUNIT_XML) --coverage-html=reports/coverage tests/
 
 install: clean .check-composer
 	@echo "Executing a composer installation of development dependencies.."
